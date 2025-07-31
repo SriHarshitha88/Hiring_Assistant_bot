@@ -1,0 +1,14 @@
+langchain
+langchain-community
+PyPDF2
+openai
+streamlit==1.25.0
+tiktoken
+nltk
+audio_recorder_streamlit
+streamlit-option-menu==0.3.2
+streamlit-lottie
+faiss-cpu
+boto3
+Ipython
+PyMySQL
