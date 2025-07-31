@@ -18,19 +18,6 @@ AI Interviewer is an intelligent interview preparation platform that uses advanc
 - 🎭 **Multiple Interview Types**: Behavioral, Technical, and Resume-based
 - 🚀 **Easy Setup**: Simple installation with clear documentation
 
-## 📋 Table of Contents
-
-- [🎯 Project Overview](#-project-overview)
-- [🚀 Features](#-features)
-- [⚙️ Installation](#️-installation)
-- [📖 Usage Guide](#-usage-guide)
-- [🏗️ Technical Architecture](#️-technical-architecture)
-- [🧠 AI & Prompt Design](#-ai--prompt-design)
-- [🎥 Demo Video](#-demo-video)
-- [🔧 Development](#-development)
-- [🤝 Contributing](#-contributing)
-- [📞 Contact](#-contact)
-
 ## 🎯 Project Overview
 
 **AI Interviewer** is a cutting-edge application that leverages generative AI to conduct personalized mock interviews. Unlike traditional interview preparation tools, this application analyzes your resume and job descriptions to generate tailored questions, providing a realistic interview experience that adapts to your specific background and target role.
