@@ -6,7 +6,7 @@ streamlit==1.25.0
 tiktoken
 nltk
 audio_recorder_streamlit
-streamlit-option-menu==0.3.2
+streamlit-option-menu
 streamlit-lottie
 faiss-cpu
 boto3
