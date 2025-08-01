@@ -1,23 +1,18 @@
+import streamlit as st
+
 def switch_page(page_name: str):
-    from streamlit.runtime.scriptrunner import RerunData, RerunException
-    from streamlit.source_util import get_pages
+    """
+    Switches the current page to the specified page name using the official Streamlit API.
+    
+    This function relies on Streamlit's built-in page management and is the
+    recommended way to navigate programmatically. It requires Streamlit 1.32.0 or higher.
 
-    def standardize_name(name: str) -> str:
-        return name.lower().replace("_", " ")
-
-    page_name = standardize_name(page_name)
-
-    pages = get_pages("home.py") 
-
-    for page_hash, config in pages.items():
-        if standardize_name(config["page_name"]) == page_name:
-            raise RerunException(
-                RerunData(
-                    page_script_hash=page_hash,
-                    page_name=page_name,
-                )
-            )
-
-    page_names = [standardize_name(config["page_name"]) for config in pages.values()]
-
-    raise ValueError(f"Could not find page {page_name}. Must be one of {page_names}")
+    Args:
+        page_name (str): The name of the page to switch to (e.g., "Professional Screen").
+    """
+    try:
+        st.switch_page(page_name)
+    except Exception as e:
+        # This will catch errors if the page name is incorrect
+        st.error(f"Could not find page '{page_name}'. Please check the page name and file.")
+        print(f"Error: {e}")
